@@ -7,8 +7,10 @@
 
 :root {
     --padding-right: 3rem;
-    --content-right-width: 800px;
+    /* --content-right-width: 800px; */
+    --content-right-width: clamp(400px, 80%, 800px);
     --shade-right: #dddddd;
+    --green-theme: #596d48;
 }
 
 * {
@@ -76,6 +78,8 @@ body {
 
 .right-container {
     background-color: white;
+    border-bottom: var(--shade-right);
+    box-shadow: 0px 2px #cccccc;
 }
 
 .right-middle {
@@ -95,12 +99,11 @@ body {
 }
 
 .left-col, .right-col {
-    flex-grow: 1;
+    flex: 1 1 200px
 }
 
 .entry {
     margin-top: 16px;
-    min-width: 300px;
 }
 
 .label-field {
@@ -120,6 +123,15 @@ body {
     padding: 2px 1ch;
 }
 
+.input-field:focus {
+    border: 1px solid blue;
+    box-shadow: 2px 2px gray;
+    outline: none;
+}
+
+.input-field:invalid {
+    border-color: red;
+}
 
 /* Right bottom section*/
 .right-bottom {
@@ -129,7 +141,7 @@ body {
 
 .submit-btn {
     padding: 12px 48px;
-    background-color:rgb(31, 126, 31);
+    background-color: var(--green-theme);
     color:white;
     font-weight: 700;
     font-size: 20px;
@@ -143,4 +155,9 @@ body {
 
 #account-disclaimer {
     margin-top: 16px;
+}
+
+.right-bottom a {
+    text-decoration: none;
+    color: var(--green-theme);
 }
