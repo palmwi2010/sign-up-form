@@ -32,6 +32,7 @@ body {
 .left {
     flex: 1 2 33vw;
     flex-shrink: 2;
+    position: relative;
 }
 
 /*TODO: Use absolute positioning*/
@@ -160,4 +161,15 @@ body {
 .right-bottom a {
     text-decoration: none;
     color: var(--green-theme);
+}
+
+.img-credit {
+    position: absolute;
+    bottom: 2%;
+    color: white;
+}
+
+.img-credit a {
+    color: white;
+    text-decoration: underline;
 }
