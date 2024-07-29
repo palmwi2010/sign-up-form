@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"></link>
     
+    <!-- Raleway -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    
     <title>Document</title>
 </head>
 <body>
@@ -23,12 +26,44 @@
             <p class="descriptor">You <em>know</em> you want to.</p>
         </div>
         <form>
-            <div class="form-inputs">
-            <h3 class="form-header">Let's do this!</h3>
+            <div class="right-container">
+                <div class="right-middle">
+                    <h3 class="form-header">Let's do this!</h3>
+                    <div class="cols">
+                        <div class="left-col">
+                            <div class="entry">
+                                <label for="input-name" class="label-field">First name</label>
+                                <input type="text" class="input-field" id="input-name">
+                            </div>
+                            <div class="entry">
+                                <label for="input-email" class="label-field">Email</label>
+                                <input type="email" class="input-field" id="input-email">
+                            </div>
+                            <div class="entry">
+                                <label for="input-password" class="label-field">Password</label>
+                                <input type="password" class="input-field" id="input-password">
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <div class="entry">
+                                <label for="last-name" class="label-field">Last name</label>
+                                <input type="text" class="input-field" id="last-name">
+                            </div>
+                            <div class="entry">
+                                <label for="phone-number" class="label-field">Phone number</label>
+                                <input type="number" class="input-field" id="phone-number">
+                            </div>
+                            <div class="entry">
+                                <label for="confirm-password" class="label-field">Confirm Password</label>
+                                <input type="password" class="input-field" id="confirm-password">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="right-bottom">
-                <button class="submit">Create Account</button>
-                <p>Already have an account?<a href="" class="login">Log in</a></p>
+                <button type='submit' class="submit-btn">Create Account</button>
+                <p id="account-disclaimer">Already have an account? <a href="" class="login">Log in</a></p>
             </div>
         </form>
     </div>
